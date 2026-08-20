@@ -87,7 +87,7 @@
     </section>
 
   
-    <!-- Google Calendar Section -->
+    <!-- Google Calendar Section 
     <section class="schedule-card calendar-section">
       <h2>Calendar</h2>
       <div class="calendar-container">
@@ -95,11 +95,10 @@
       </div>
       <p class="calendar-hint">On mobile, click the “+” to subscribe to the calendar.</p>
     </section>
-
+-->
     <!-- Photos Section -->
     <section class="schedule-card photos-section">
       <h2>Photos</h2>
-      <p>Slideshow generated from the SYRG Google Photos album.</p>
       <div class="photo-carousel">
         <button class="carousel-button prev" type="button" aria-label="Previous photo">‹</button>
         <div class="photo-track-wrapper" tabindex="0">
@@ -115,32 +114,39 @@
     <!-- Shop Section -->
     <section class="schedule-card shop-section">
       <h2>Shop</h2>
-      <p>ItemOrder blocks embedding on this page, so open the shop directly in a new tab.</p>
       <p><a href="https://syrgswitchardprg.itemorder.com/shop/home/" target="_blank" rel="noopener noreferrer">Open SYRG shop</a></p>
     </section>
 
     <!-- Other Runs Groups -->
     <section class="schedule-card other-runs-section">
       <h2>Other Runs Groups</h2>
-      <p>Explore more local running groups and events in the area:</p>
+      <p>Explore more local running groups:</p>
       <ul class="other-runs-list">
-        <li><a href="https://www.strava.com/clubs" target="_blank" rel="noopener noreferrer">Strava Clubs</a></li>
-        <li><a href="https://www.meetup.com/topics/running/" target="_blank" rel="noopener noreferrer">Local Meetup Running Groups</a></li>
-        <li><a href="https://www.runnersworld.com/running-clubs/" target="_blank" rel="noopener noreferrer">Runner's World Club Listings</a></li>
+        <li><a href="https://www.instagram.com/heartworkbrewing" target="_blank" rel="noopener noreferrer">Heartwork Brewing Sunday Run</a></li>
+        <li><a href="https://www.runclubiu.com/" target="_blank" rel="noopener noreferrer">IU Bloomington Run Club</a></li>
+        <li><a href="https://www.bara.run" target="_blank" rel="noopener noreferrer">BARA</a></li>
+        <li><a href="https://www.facebook.com/bloomingtonbeerrunners" target="_blank" rel="noopener noreferrer">Bloomington Beer Runners</a></li>
+        <li><a href="https://bfh3.com/" target="_blank" rel="noopener noreferrer">BloomingFools Hash House Harriers</a></li>
       </ul>
     </section>
 
     <!-- Contact Us -->
     <section class="schedule-card contact-section">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:info@syrg-run.com">info@syrg-run.com</a></p>
-      <p>Questions? Reach out for pace group info, route changes, or group invites.</p>
-      <h3>Socials</h3>
-      <ul class="social-links">
-        <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-        <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="https://www.strava.com" target="_blank" rel="noopener noreferrer">Strava</a></li>
-      </ul>
+      <div class="contact-content">
+        <div class="contact-item">
+          <h2>Contact Us</h2>
+          <p class="contact-description">Questions? Reach out for pace group info, route changes, or group invites.</p>
+          <a href="mailto:info@syrg-run.com" class="email-link">✉ info@syrg-run.com</a>
+        </div>
+        <div class="contact-item">
+          <h2>Socials</h2>
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/groups/444929987498187" target="_blank" rel="noopener noreferrer">f Facebook</a></li>
+            <li><a href="https://www.instagram.com/syrg.bloomington?igsh=YXZvaGNpd3lyYmFo&igsi=YXZvaGNpd3lyYmFo" target="_blank" rel="noopener noreferrer">📷 Instagram</a></li>
+            <li><a href="https://www.strava.com/clubs/1124942" target="_blank" rel="noopener noreferrer">🏃 Strava</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
   </main>
@@ -269,6 +275,7 @@
 
       window.addEventListener('resize', updateCarousel);
       updateCarousel();
+      setTimeout(updateCarousel, 0);
     })();
   </script>
   <script>
