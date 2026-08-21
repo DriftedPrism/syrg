@@ -361,6 +361,14 @@ h2 { font-size: 1.5rem; margin-bottom: 1rem; }
   margin-top: 1.5rem;
 }
 
+.strava-route-embed {
+  margin-top: 1.5rem;
+}
+
+#strava-routes-section p {
+  margin-bottom: 0.75rem;
+}
+
 /* Responsive Google Calendar Container */
 .calendar-container {
   position: relative;
@@ -482,12 +490,28 @@ h2 { font-size: 1.5rem; margin-bottom: 1rem; }
   min-width: 220px;
   width: 320px;
   max-width: 100%;
-  padding: 0.85rem 1rem;
+  padding: 1rem 1.25rem;
   border-radius: 12px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.92);
+  border: 2px solid var(--primary);
+  background: rgba(255, 255, 255, 0.98);
   color: var(--text);
   font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(142, 207, 79, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.route-select:hover {
+  box-shadow: 0 6px 16px rgba(142, 207, 79, 0.3);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.route-select:focus {
+  outline: none;
+  box-shadow: 0 6px 20px rgba(142, 207, 79, 0.4);
+  border-color: var(--primary);
 }
 
 .calendar-container iframe {
