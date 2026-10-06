@@ -10,6 +10,25 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; }
 
+.potluck-banner {
+  padding: 0.65rem 1rem;
+  background: var(--primary);
+  color: #07203b;
+  text-align: center;
+  font-weight: 600;
+}
+
+.potluck-banner a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.potluck-banner a:hover,
+.potluck-banner a:focus-visible {
+  text-decoration-thickness: 2px;
+}
+
 header { text-align: center; padding: 3rem 1rem 1.25rem; background: linear-gradient(180deg, #f2fbff 0%, #ffffff 100%); }
 header h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem; }
 header p { color: var(--muted); font-size: 1.1rem; }
